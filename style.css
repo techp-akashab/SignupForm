@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: flex;
+    height: 100vh;
+}
+.img-container{
+   background-color: rgba(0, 0, 0, 0.783);
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   padding: 3vh;
+}
+img{
+    width: 10vw;
+    height: 10vh;
+}
+.left{
+    background-image: url('./skyscraper-4433572.jpg');
+    width: 70vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(241, 241, 241);
+}
+.right-container{
+    height: 40%;
+    padding: 0vw 4vw;
+}
+.content{
+    position: relative;
+    /* bottom: 10px; */
+    top: 80px;
+}
+.firstformpart{
+    padding: 2vh 4vw;
+    background-color: white;
+    box-shadow: 1px 2px 3px rgb(188, 188, 188);
+}
+.formcontrols{
+    display: flex;
+    flex-wrap: wrap;
+}
+.formcontrols > label{
+    width: 50%;
+    padding: 2vh 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+input{
+    width: 15vw;
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 5px;
+    height: 4vh;
+    padding-left: 1vw;
+}
+input:valid{
+    border: 1px solid green;
+}
+input:invalid{
+    border: 1px solid red;
+}
+.intro{
+    font-size: x-large;
+    font-weight: bold;
+}
+.submission{
+    display: flex;
+    flex-direction: column;
+    padding: 4vh 4vw;
+    gap: 4vh;
+}
+.submission>button{
+    width: 20%;
+    height: 6vh;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
